@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="script/menu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Typing Game</title>
+</head>
+
+<body>
+
+    <section class="theGame" id="gameLayout">
+            <div class="gameGrid">
+                <div class="logoSpace">
+                    <img class="myLogo" src="image/Bar-Code-Name-Logo-Black.png" alt="">
+                </div>
+                <div class = "gameMenu">
+                    <div id="showMenu">
+                        <button id="mainBtn" onclick="showMenu()"><b>MENU</b></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gameArea" id="gameArea">
+                <h1>Type the word within <span style="color: red" id="seconds">5</span> seconds</h1>
+                <div class="typeArea" id="typeArea">
+                        <h4 class="gameStatus" id="gameStatus">Start Typing</h4>
+                        <h2 id="current-Word" class="current-Word">hello</h2>
+                        <input type="text" class="word-Input" id="word-Input" placeholder="Type Here" autofocus>
+                        <div class="timescore">
+                            <div class="timeLeft">
+                                <h3>Time Left: <span id="time">0</span></h3>
+                            </div>
+                            <div></div>
+                            <div class="theScore">
+                                <h3>Score: <span id="score">0</span></h3>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+    </section>
+
+    <!-- Section Divider -->
+
+    <section id="theMenu" class="hideMe">
+        <div class="menuGrid">
+            <div class="mainMenu" id="btnMenu">
+                <ul>
+                    <li><b>HOME</b></li>
+                    <li><b>ABOUT</b></li>
+                    <li><b>MY PROJECTS</b></li>
+                    <li><b>CONTACT</b></li>
+                </ul>
+            </div>
+            <div class="instrucNButton">
+                <div class="hideMenu">
+                    <div id="hideMenu">
+                        <button onclick="hideMenu()"><b>MENU</b></button>
+                    </div>
+                    <ul>
+                        <li><a href="https://twitter.com/rbnderoxas" target="#" class="fa fa-twitter"></a></li>
+                        <li><a href="https://www.instagram.com/rbnderoxas/" target="#" class="fa fa-instagram"></a></li>
+                        <li><a href="https://github.com/rbnderoxas" target="#" class="fa fa-github"></a></li> 
+                    </ul>
+                </div>
+                <div class="instruct">
+                    <span><b>INSTRUCTIONS</b></span>
+                    <ul>
+                        <li>Type each word within the given amount of time</li>
+                        <li>To play again just start typing the current word</li>
+                        <li>Score will reset and not recorded</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script/typegame.js"></script>
+</body>
+</html>
